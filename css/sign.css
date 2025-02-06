@@ -1,0 +1,281 @@
+:root {
+  --main-color: #4c88a2;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.sign .container .logo {
+  width: 100px;
+  height: 100px;
+}
+.sign {
+  background-size: 100% 100%;
+  background-image: url("../images/2.jpg");
+}
+.sign .container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign .container .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--main-color);
+  padding: 30px 20px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+.sign .container .box .img {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign .container .box .box-content {
+  flex-basis: 40%;
+}
+.sign .box img {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
+}
+
+@media (max-width: 1199px) {
+  .sign .box img 
+  {
+    width: 250px;
+    height: 250px;
+  }
+  .sign .box .img 
+  {
+    flex-basis: 40%;
+  }
+  .sign .container .box .box-content
+  {
+    flex-basis: 60%;
+  }
+}
+@media (max-width: 991px) {
+  .sign .box img 
+  {
+    width: 200px;
+    height: 200px;
+  }
+  .sign .box .img 
+  {
+    flex-basis: 40%;
+  }
+  .sign .container .box .box-content
+  {
+    flex-basis: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .sign .container .box {
+    flex-direction: column;
+    width: 100%;
+    margin: 15px 0;
+  }
+  .sign .box img 
+  {
+    width: 150px;
+    height: 150px;
+  }
+  .sign .box .img ,
+  .sign .container .box .box-content
+  {
+    width: 100%;
+  }
+  .sign .box .box-content h2 {
+    margin: 30px;
+  }
+}
+
+.sign .box h2 {
+  margin: 40px 0;
+  color: #333333;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+.sign .box form {
+  width: 100%;
+}
+.sign .box-content form label {
+  padding: 10px;
+  display: block;
+  color: #333333;
+}
+.sign .box form > div > input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 46px;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  color: #333333;
+  position: relative;
+  z-index: 2;
+}
+.sign .box form div {
+  position: relative;
+  overflow: hidden;
+  padding: 2px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.sign .box form div:first-of-type {
+  margin-bottom: 20px;
+} 
+.sign .box form div span 
+{
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.sign .box form div span::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f023";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  color: #adadad;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  
+}
+.sign .box form div:nth-child(2) span::before {
+  content: "\f0e0";
+}
+
+.sign .box form input:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.sign .box form div input:focus + span::before {
+  color: var(--main-color);
+}
+.sign .box form div span::after 
+{
+    content: "";
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    height: 2px;
+    bottom: -1px;
+    left: -100%;
+    background-color: #4c88a2;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.sign .box form div input:focus + span::after {
+  left: 0;
+}
+.sign .box form ::placeholder {
+  color: #adadad;
+}
+.sign .box form a {
+  text-align: end;
+  display: block;
+  text-decoration: none;
+  color: #666666;
+  margin-top: 5px;
+}
+.sign form input[type="submit"] {
+  width: 100%;
+  background-color: var(--main-color);
+  cursor: pointer;
+  color: white;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.sign .box .box-content p {
+  color: #666666;
+  text-align: center;
+  text-transform: capitalize;
+  margin: 40px 0 15px;
+}
+.sign .box .box-content .social {
+  display: flex;
+  justify-content: center;
+}
+.sign .box-content .social a {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(59, 89, 152);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+.sign .box-content .social a:nth-child(2) {
+  background-color: rgb(29, 161, 242);
+}
+.sign .box-content .social a:nth-child(3) {
+  background-color: rgb(234, 67, 53);
+}
+ .sign .box-content .social a i {
+  font-size: 30px;
+  color: white;
+}
