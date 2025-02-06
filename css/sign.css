@@ -51,10 +51,10 @@
   border-radius: 10px;
   box-shadow: 0 0 10px var(--main-color);
   padding: 30px 20px;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 .sign .container .box .img {
   flex-basis: 60%;
@@ -69,56 +69,65 @@
   width: 300px;
   height: 300px;
   border-radius: 100%;
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
 }
 
 @media (max-width: 1199px) {
-  .sign .box img 
-  {
+  .sign .box img {
     width: 250px;
     height: 250px;
   }
-  .sign .box .img 
-  {
+  .sign .box .img {
     flex-basis: 40%;
   }
-  .sign .container .box .box-content
-  {
+  .sign .container .box .box-content {
     flex-basis: 60%;
   }
 }
 @media (max-width: 991px) {
-  .sign .box img 
-  {
+  .sign .box img {
     width: 200px;
     height: 200px;
   }
-  .sign .box .img 
-  {
+  .sign .box .img {
     flex-basis: 40%;
   }
-  .sign .container .box .box-content
-  {
+  .sign .container .box .box-content {
     flex-basis: 60%;
   }
 }
 @media (max-width: 767px) {
   .sign .container .box {
     flex-direction: column;
-    width: 100%;
     margin: 15px 0;
   }
-  .sign .box img 
-  {
+  .sign .box img {
     width: 150px;
     height: 150px;
   }
-  .sign .box .img ,
-  .sign .container .box .box-content
-  {
+  .sign .box .img,
+  .sign .container .box .box-content {
+    width: 78%;
+  }
+  .sign .box .box-content h2 {
+    margin: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .sign .container .box {
+    flex-direction: column;
+    width: 100%;
+    margin: 15px 0;
+  }
+  .sign .box img {
+    width: 150px;
+    height: 150px;
+  }
+  .sign .box .img,
+  .sign .container .box .box-content {
     width: 100%;
   }
   .sign .box .box-content h2 {
@@ -161,9 +170,8 @@
 }
 .sign .box form div:first-of-type {
   margin-bottom: 20px;
-} 
-.sign .box form div span 
-{
+}
+.sign .box form div span {
   position: absolute;
   left: 0px;
   top: 0;
@@ -184,7 +192,6 @@
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
-  
 }
 .sign .box form div:nth-child(2) span::before {
   content: "\f0e0";
@@ -198,21 +205,20 @@
 .sign .box form div input:focus + span::before {
   color: var(--main-color);
 }
-.sign .box form div span::after 
-{
-    content: "";
-    position: absolute;
-    z-index: 4;
-    width: 100%;
-    height: 2px;
-    bottom: -1px;
-    left: -100%;
-    background-color: #4c88a2;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+.sign .box form div span::after {
+  content: "";
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  height: 2px;
+  bottom: -1px;
+  left: -100%;
+  background-color: #4c88a2;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 .sign .box form div input:focus + span::after {
   left: 0;
@@ -275,7 +281,7 @@
 .sign .box-content .social a:nth-child(3) {
   background-color: rgb(234, 67, 53);
 }
- .sign .box-content .social a i {
+.sign .box-content .social a i {
   font-size: 30px;
   color: white;
 }
